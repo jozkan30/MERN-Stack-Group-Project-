@@ -9,7 +9,7 @@
 - Justin (blacksmith)
 =======
 - Zack 
-- Xavier 
+- Xavier is here!
 - Katherine 
 - Justin
 
