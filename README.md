@@ -2,7 +2,7 @@
 
 ### Team Members:
 - John (visionary)
-- Zack 
-- Xavier 
-- Katherine 
-- Justin
+- Zack (brawler)
+- Xavier (craftsman)
+- Katherine (mage)
+- Justin (blacksmith)
