@@ -3,6 +3,6 @@
 ### Team Members:
 - John (visionary)
 - Zack 
-- Xavier 
+- Xavier is here!
 - Katherine 
 - Justin
