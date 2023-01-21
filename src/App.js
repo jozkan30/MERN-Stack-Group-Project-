@@ -1,10 +1,20 @@
 import './App.css';
-
+import { Routes, Route } from "react-router-dom";
+import Nav from './components/Nav.jsx';
+import Items from './screens/AllListings.jsx'
+import Home from './screens/Home.jsx'
 function App() {
   return (
+    <div>
+    <div className="nav">
+    <Nav />
+    </div>
     <div className="App">
-     <h1> Free Stuff !</h1>
-     <h1> Free Coffee</h1>
+    <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/items" element={<Items />} />
+    </Routes>
+    </div>
     </div>
   );
 }
