@@ -95,3 +95,37 @@
         background-color: #3e8e41;
     }
     
+    .create-form img {
+        width: 200px;
+        height: 200px;
+        margin: 10px 0;
+    }
+    
+    .create-form p {
+        text-align: center;
+        margin: 10px 0;
+        color: gray;
+    }
+    
+    .create-form label{
+        display: inline-block;
+        padding: 6px 12px;
+        font-size: 14px;
+        font-weight: 600;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        background-color: #4CAF50;
+        color: #fff;
+    }
+    
+    .create-form input[type=file]{
+        display: none;
+    }
+    
