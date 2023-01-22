@@ -60,7 +60,7 @@ export default function ItemCreate() {
             value={item.description}
             onChange={handleChange}
           />
-          <label htmlFor="custom-file-input">Item Picture</label>
+          <label htmlFor="custom-file-input">Click To Upload Shitty Picture</label>
           <input type="file" name="image" onChange={handleFileChange} className="custom-file-input" id="custom-file-input" />
           
           
