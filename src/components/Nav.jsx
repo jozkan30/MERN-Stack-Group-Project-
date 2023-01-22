@@ -11,8 +11,8 @@ export default function Nav() {
         <NavLink className={"navBarInfo"} to="/items">
           All Listings {" "}
         </NavLink>
-        <NavLink className={"navBarInfo"} to="/add-item">
-          Add A New Item 
+        <NavLink className={"navBarInfo"} to="/add-listing">
+          Add A New Item
         </NavLink>
       </nav>
     );
