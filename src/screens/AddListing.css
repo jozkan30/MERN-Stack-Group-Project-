@@ -49,3 +49,23 @@
         background-color: rgb(216, 216, 216);
       }
       
+      .custom-file-input {
+        width: 80%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #fff;
+        cursor: pointer;
+        font-size: 14px;
+        text-align: center;
+        transition: all 0.2s ease-in-out;
+
+    }
+    
+    .custom-file-input:hover {
+        border: 1px solid #4CAF50;
+        background-color: #f1f1f1;
+        transform: scale(1.05);
+    }
+    

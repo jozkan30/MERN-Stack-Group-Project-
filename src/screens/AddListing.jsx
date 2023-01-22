@@ -53,7 +53,6 @@ export default function ItemCreate() {
             value={item.name}
             onChange={handleChange}
           />
-          <input type="file" name="image" onChange={handleFileChange} />
           <input
             type="text"
             placeholder="Item Description"
@@ -61,6 +60,9 @@ export default function ItemCreate() {
             value={item.description}
             onChange={handleChange}
           />
+          <label htmlFor="custom-file-input">Item Picture</label>
+          <input type="file" name="image" onChange={handleFileChange} className="custom-file-input" id="custom-file-input" />
+          
           
           <button type="submit">Post Item!!!</button>
         </form>
