@@ -1,7 +1,8 @@
 import Item from "../components/Items.jsx";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { createItem } from "../services/items.js"
+import './AddListing.css'
 
 export default function ItemCreate() {
     const [item, setItem] = useState({
