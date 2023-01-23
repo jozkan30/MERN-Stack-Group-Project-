@@ -1,0 +1,109 @@
+body {
+    background-color: #F9A826;
+}
+
+.heading {
+    text-align: center;
+    margin-top: 50px;
+    background-color: #4CAF50;
+    padding: 30px;
+    
+}
+
+.heading h1 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #E91E63;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.body {
+    text-align: center;
+    margin: 30px 0;
+    background-color: #F9A826;
+    padding: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #333;
+}
+
+.body p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    text-align: center;
+    margin: 0;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    transform: scale(1);
+}
+
+button:hover {
+    background-color: #006699;
+    transform: scale(1.1);
+    box-shadow: 2px 2px 3px #ccc;
+}
+
+.devTeam {
+    text-align: center;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+}
+
+.devTeam .entry {
+    box-shadow: 1px 1px 1px #ccc;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.devTeam img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+    transition: all 0.3s ease;
+}
+
+.devTeam img:hover {
+    transform: scale(2);
+    box-shadow: 2px 2px 3px #ccc;
+    border: 3px solid #E91E63;
+}
+
+
+.devTeam p {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+    color: rgb(62, 190, 30);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.devTeam h2 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: #E91E63;
+}
+
+.body, .heading, .devTeam {
+    margin-top: 0;
+}
