@@ -11,11 +11,11 @@ export default function Home() {
   return (
     <>
     <div className="heading">
-      <h1>HEY THERE! COME GET SOME FREE SHIT!</h1>
+      <h1>HEY THERE! COME GET SOME FREE STUFF</h1>
       </div>
       <div className="body">
-      <p>Have you ever wanted to have some shit wihtout having to pay for that shit? Well now you can. Click below to see all of the free shit available, and click on an image to find out more details like who's giving it away and where you can pick it up. You ready to finally have some shit?!</p>
-      <button onClick={handleNav}>Click to see some free shit</button>
+      <p>Have you ever wanted to have some stuff wihtout having to pay for that? Well now you can. Click below to see all of the free stuff available, and click on an image to find out more details like who's giving it away and where you can pick it up. You ready to finally have some stuff?!</p>
+      <button onClick={handleNav}>Click to see some free stuff</button>
       </div>
       <div className="devTeam">
       <h2>Meet your dev team</h2>
