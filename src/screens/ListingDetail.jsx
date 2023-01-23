@@ -17,6 +17,9 @@ export default function ListingDetail() {
 console.log(oneItem.description)
 setItem(oneItem)
 }
+ function handleComment() {
+
+ }
 
 useEffect(()=>{
 fetchItem()
@@ -32,10 +35,13 @@ fetchItem()
       </div>
       <div className='infoContainer'>
         <div className='displayDeets'>
-          <div className='itemPic'>pic
-          <img className='theImage' src={item.image}></img>
+          <div className='itemPic'>
+          <img className='theImage' src={item.image} style={{maxWidth: 400}}></img>
           </div>
-          <div className='pickupDeets'>pickup deets</div>
+          <div className='pickupDeets'>
+            <p>{item.comments}</p>
+            <p>This is where the comments will go</p>
+          </div>
         </div>
         <div className='buttonsContainer'>
           <div className='itemDeets'>{item.description}</div>
@@ -43,7 +49,7 @@ fetchItem()
           <button className='iWantIt'>Gimme!</button>
         </div>
         </div>
-      <form className='commentsSection'>
+      <form className='commentsSection' onSubmit={handleComment}>
           <input type='text' className='commentField' placeholder='Enter Comment'></input>
           <button type='submit' className='commentButton'>⌲</button>
       </form>
