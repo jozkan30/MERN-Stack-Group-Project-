@@ -1,20 +1,16 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-<<<<<<<<< Temporary merge branch 1
+
 import Nav from "./components/Nav.jsx";
 import Items from "./screens/AllListings.jsx";
 import Home from "./screens/Home.jsx";
 
 import ItemCreate from "./screens/AddListing";
-=========
-import Nav from './components/Nav.jsx';
-import Items from './screens/AllListings.jsx'
-import Home from './screens/Home.jsx'
 
-import ItemCreate from './screens/AddListing';
+
 
 import ListingDetail from './screens/ListingDetail.jsx';
->>>>>>>>> Temporary merge branch 2
+
 
 
 function App() {
@@ -33,7 +29,7 @@ function App() {
 
     </Routes>
     </div>
->>>>>>>>> Temporary merge branch 2
+
     </div>
   );
 }
