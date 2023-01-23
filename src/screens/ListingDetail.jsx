@@ -23,12 +23,8 @@ fetchItem()
 },[])
   return (
     <div className='whole'>
-      <div className='innerBanner'>
-        
-          <Link className='closeButton' to={`/items`}>Close
-
-          </Link>
-       
+      <div className='innerBanner'>  
+        <Link className='closeButton' to={`/items`}>Close</Link>
       </div>
       <div className='infoContainer'>
         <div className='displayDeets'>
@@ -39,7 +35,7 @@ fetchItem()
         </div>
         <div className='buttonsContainer'>
           <div className='itemDeets'>{item.description}</div>
-          <button className='edit'>Edit</button>
+          <Link className='editButton' to={`/items/:id/edit`} item={item}>Edit</Link>
           <button className='iWantIt'>Gimme!</button>
         </div>
         </div>
