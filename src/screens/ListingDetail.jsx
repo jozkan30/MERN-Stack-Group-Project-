@@ -1,15 +1,12 @@
-import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import "../App.css";
+import React, { useEffect, useState } from 'react';
+import '../App.css';
 import { getItem } from '../services/items.js';
 import { useParams } from 'react-router-dom';
 
 
+
 export default function ListingDetail() {
-  const [ comment, setComment ] = useState({
-    comments: ""
-  })
- 
  const id = useParams()
  
  const[item, setItem] = useState({})
@@ -19,13 +16,17 @@ export default function ListingDetail() {
   let oneItem = await getItem(id.id)
 setItem(oneItem)
 }
- function handleComment() {
 
- }
+
+  useEffect(() => {
+    fetchItem();
+  }, []);
 
 useEffect(()=>{
 fetchItem()
 },[])
+
+
   return (
     <div className="whole">
       <div className="innerBanner">
@@ -51,8 +52,16 @@ fetchItem()
           <button className="iWantIt">Gimme!</button>
         </div>
         </div>
-      <form className='commentsSection' onSubmit={handleComment}>
-          <input type='text' className='commentField' placeholder='Enter Comment'></input>
+
+      
+      <form className='commentsSection'>
+          <input 
+          type='text' 
+          className='commentField' 
+          placeholder='Enter Comment' 
+          name="comment"
+          ></input>
+
           <button type='submit' className='commentButton'>⌲</button>
       </form>
     </div>
