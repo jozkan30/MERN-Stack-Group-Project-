@@ -1,12 +1,17 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
+
 import Nav from "./components/Nav.jsx";
 import Items from "./screens/AllListings.jsx";
 import Home from "./screens/Home.jsx";
 
 import ItemCreate from "./screens/AddListing";
 
-import ListingDetail from "./screens/ListingDetail.jsx";
+
+
+import ListingDetail from './screens/ListingDetail.jsx';
+
+
 
 function App() {
   return (
@@ -19,9 +24,12 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/items" element={<Items />} />
           <Route path="/add-listing" element={<ItemCreate />} />
-          <Route path="/items/:id" element={<ListingDetail />} />
-        </Routes>
-      </div>
+
+          <Route path='/items/:id' element={<ListingDetail/>} />
+
+    </Routes>
+    </div>
+
     </div>
   );
 }
