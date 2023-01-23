@@ -1,8 +1,24 @@
 .listed-item-img{
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    margin-top: 5px;
 }
 
 .all-items{
     text-align: center;
+    width: 320px;
+    height: 500px;
+    margin: 25px;
+    background-color: rgba(60, 0, 0, .3);
+    border-radius: 10px;
+}
+
+.itemTitle{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    height: 100px;
+    max-width: 300px;
+    margin: 50px;
 }

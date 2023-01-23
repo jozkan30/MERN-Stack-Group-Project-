@@ -11,7 +11,7 @@ export default function Item({ item }) {
         alt={`${item._id}`}
         className="listed-item-img"
         />
-        <p> {item.title} </p>
+        <p className="itemTitle"> {item.title} </p>
       </Link>
     </div>
   );
