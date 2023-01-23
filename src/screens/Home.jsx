@@ -19,6 +19,18 @@ export default function Home() {
       </div>
       <div className="devTeam">
       <h2>Meet your dev team</h2>
+
+      {/* <img src="" alt="John"></img>
+      <p>A little blurby blurb about each of us.</p>
+      <img src="" alt="Zack"></img>
+      <p>A little blurby blurb about each of us.</p>
+      <img src="" alt="Justin"></img>
+      <p>A little blurby blurb about each of us.</p>
+      <img src="" alt="Xavier"></img>
+      <p>A little blurby blurb about each of us.</p>
+      <img src="" alt="Katherine"></img>
+       */}
+
       <img src="https://pbs.twimg.com/media/B8wTjrKCEAE2O4P.jpg" alt="John"></img>
       <p>Synergy-seeker. Game-changer. Value-architect.</p>
       <img src="https://i.imgur.com/Lpmwvql.png" alt="Zack"></img>
@@ -29,6 +41,7 @@ export default function Home() {
       <p>Write your own story.</p>
       <img src="https://as2.ftcdn.net/v2/jpg/01/89/86/13/1000_F_189861340_znPKQiIUAN2RtSfL7atF1oLnas8Jvl0k.jpg" alt="Katherine"></img>
       <p>I don't have anything right now. Sorry.</p>
+
     </div>
     </>
   )
