@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import {Link} from 'react-router-dom';
 import '../App.css';
-import { getItem } from '../services/items.js';
+import { getItem, updateItem } from '../services/items.js';
 import { useParams } from 'react-router-dom';
 
 
 export default function ListingDetail() {
+  const [ comment, setComment ] = useState({
+    comments: ""
+  })
  
  const id = useParams()
  
@@ -14,16 +17,27 @@ export default function ListingDetail() {
 
  async function fetchItem(){
   let oneItem = await getItem(id.id)
-console.log(oneItem.description)
 setItem(oneItem)
 }
- function handleComment() {
+ 
+const handleComment = async (e) => {
+  e.preventDefault()
+  await updateItem(id.id)
+ }
 
+ const handleChange = (e) => {
+  const { value, name } = e.target
+    
+    setComment((prev) => ({
+      ...prev,
+      [name]: value
+    }))
  }
 
 useEffect(()=>{
 fetchItem()
 },[])
+
   return (
     <div className='whole'>
       <div className='innerBanner'>
@@ -50,7 +64,13 @@ fetchItem()
         </div>
         </div>
       <form className='commentsSection' onSubmit={handleComment}>
-          <input type='text' className='commentField' placeholder='Enter Comment'></input>
+          <input 
+          type='text' 
+          className='commentField' 
+          placeholder='Enter Comment' 
+          name="comment"
+          value={comment.comments} 
+          onChange={handleChange}></input>
           <button type='submit' className='commentButton'>⌲</button>
       </form>
     </div>
