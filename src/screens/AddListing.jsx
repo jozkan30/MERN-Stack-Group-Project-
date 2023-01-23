@@ -7,23 +7,18 @@ import './AddListing.css'
 export default function ItemCreate() {
     const [item, setItem] = useState({
         name: "",
+        image: "",
         description: "",
     });
 
     // new state variable to keep track of the selected file
     const [file, setFile] = useState(null);
-    // new state variable to keep track of the image preview
-    const [preview, setPreview] = useState(null);
 
     let navigate = useNavigate();
 
     // function to handle file input change
     const handleFileChange = (e) => {
-        const file = e.target.files[0];
-        setFile(file);
-        // create a object URL to show the preview
-        const objectUrl = URL.createObjectURL(file);
-        setPreview(objectUrl);
+        setFile(e.target.files[0]);
     };
 
     const handleSubmit = async (e) => {
@@ -67,10 +62,12 @@ export default function ItemCreate() {
           />
           <label htmlFor="custom-file-input">Click To Upload Shitty Picture</label>
           <input type="file" name="image" onChange={handleFileChange} className="custom-file-input" id="custom-file-input" />
-          {preview && <img src={preview} alt="preview" width="200" height="200" />}
-          {!preview && <p>No image selected</p>}
+          
+          
           <button type="submit">Post Item!!!</button>
         </form>
       </div>
     );
+
+
 }
