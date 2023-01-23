@@ -1,6 +1,8 @@
 import Item from "../components/Items.jsx";
 import { useEffect, useState } from "react";
 import { getItems } from "../services/items.js";
+import '../App.css'
+
 export default function Items() {
   const [items, setItems] = useState([]);
 
