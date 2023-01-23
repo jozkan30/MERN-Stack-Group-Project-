@@ -4,7 +4,6 @@ import '../App.css';
 import { getItem, updateItem } from '../services/items.js';
 import { useParams } from 'react-router-dom';
 
-
 export default function ListingDetail() {
   const [ comment, setComment ] = useState({
     comments: ""
@@ -19,7 +18,7 @@ export default function ListingDetail() {
   let oneItem = await getItem(id.id)
 setItem(oneItem)
 }
- 
+
 const handleComment = async (e) => {
   e.preventDefault()
   await updateItem(id.id)
@@ -39,30 +38,31 @@ fetchItem()
 },[])
 
   return (
-    <div className='whole'>
-      <div className='innerBanner'>
-        
-          <Link className='closeButton' to={`/items`}>Close
-
-          </Link>
-       
+    <div className="whole">
+      <div className="innerBanner">
+        <Link className="closeButton" to={`/items`}>
+          Close
+        </Link>
       </div>
       <div className='infoContainer'>
         <div className='displayDeets'>
           <div className='itemPic'>
-          <img className='theImage' src={item.image} style={{maxWidth: 400}}></img>
+            <h1> {item.title} </h1>
+          <img className='theImage' src={item.image}></img>
           </div>
-          <div className='pickupDeets'>
-            <p>{item.comments}</p>
-            <p>This is where the comments will go</p>
-          </div>
+          <div className='pickupDeets'>pickup deets</div>
         </div>
-        <div className='buttonsContainer'>
-          <div className='itemDeets'>{item.description}</div>
-          <button className='edit'>Edit</button>
-          <button className='iWantIt'>Gimme!</button>
+        <div className="buttonsContainer">
+          <div className="itemDeets">
+            
+            <p>{item.description}</p>
+            
+            </div>
+          <button className="edit">Edit</button>
+          <button className="iWantIt">Gimme!</button>
         </div>
         </div>
+
       <form className='commentsSection' onSubmit={handleComment}>
           <input 
           type='text' 
@@ -74,6 +74,5 @@ fetchItem()
           <button type='submit' className='commentButton'>⌲</button>
       </form>
     </div>
-  )
+  );
 }
-
