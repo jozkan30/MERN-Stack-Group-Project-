@@ -13,6 +13,7 @@ export default function Item({ item }) {
         />
         </Link>
         <p className="itemTitle" > {item.title} </p>
+        <div className="howManyPeople">X amount of people want this shit</div>
     </div>
   );
 }

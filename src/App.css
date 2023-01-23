@@ -66,7 +66,7 @@
 }
 
 .theimage{
-max-width:100px;
+max-width: 100px;
 max-height: 100px;
 }
 
@@ -87,32 +87,37 @@ max-height: 100px;
   order: 2;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
 }
+
 
 
 
 .itemDeets {
   order: 1;
   border: solid black;
-  min-width: 200px;
-  min-height: 390px;
-  margin: 0px 5px 3px 5px;
+  max-width: 200px;
+  min-height: 400px;
+  margin: 5px 5px 3px 5px;
   background-color: black;
   color: lightgray;
-   
+  padding: 3px;
 }
 
 .iWantIt {
   order: 2;
   border: solid black;
   margin: 0px 5px 5px 5px;
+  text-decoration: none;
+  text-align: center;
 }
 
 .edit {
   order: 3;
   border: solid black;
   margin: 0px 5px 5px 5px;
+  text-decoration: none;
+  text-align: center;
 }
 
 .commentBox {
@@ -157,4 +162,8 @@ max-height: 100px;
     flex-direction: column;
     width: 700px;
     align-items: center;
+}
+
+.howManyPeople{
+    color: red;
 }
