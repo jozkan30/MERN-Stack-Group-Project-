@@ -29,13 +29,18 @@ setItem(oneItem)
       </div>
       <div className='infoContainer'>
         <div className='displayDeets'>
-          <div className='itemPic'>pic
+          <div className='itemPic'>
+            <h1> {item.title} </h1>
           <img className='theImage' src={item.image}></img>
           </div>
           <div className='pickupDeets'>pickup deets</div>
         </div>
         <div className="buttonsContainer">
-          <div className="itemDeets">{item.description}</div>
+          <div className="itemDeets">
+            
+            <p>{item.description}</p>
+            
+            </div>
           <button className="edit">Edit</button>
           <button className="iWantIt">Gimme!</button>
         </div>
