@@ -30,6 +30,8 @@
   background-color: rgb(243, 117, 117);
   margin: 5px;
   border-radius: 10px;
+  text-decoration: none;
+  padding: 2px;
 }
 
 .infoContainer {
@@ -64,7 +66,8 @@
 }
 
 .theimage{
-
+max-width:100px;
+max-height: 100px;
 }
 
 .pickupDeets {
@@ -147,3 +150,9 @@
 
 
 
+.editForm{
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    align-items: center;
+}

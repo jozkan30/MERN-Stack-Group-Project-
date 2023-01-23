@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import {Link} from 'react-router-dom';
 import '../App.css';
 import { getItem } from '../services/items.js';
 import { useParams } from 'react-router-dom';
+
 
 export default function ListingDetail() {
  
@@ -22,7 +24,11 @@ fetchItem()
   return (
     <div className='whole'>
       <div className='innerBanner'>
-          <button className='closeButton'>Close</button>
+        
+          <Link className='closeButton' to={`/items`}>Close
+
+          </Link>
+       
       </div>
       <div className='infoContainer'>
         <div className='displayDeets'>
