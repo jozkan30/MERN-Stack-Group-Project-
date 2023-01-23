@@ -6,36 +6,19 @@ import './AddListing.css'
 
 export default function ItemCreate() {
     const [item, setItem] = useState({
-        name: "",
+        title: "",
         description: "",
-        
+        image: ""
     });
-
-    // new state variable to keep track of the selected file
-    const [file, setFile] = useState(null);
-    // new state variable to keep track of the image preview
-    const [preview, setPreview] = useState(null);
-
     let navigate = useNavigate();
-
-    // function to handle file input change
-    const handleFileChange = (e) => {
-        const file = e.target.files[0];
-        setFile(file);
-        // create a object URL to show the preview
-        const objectUrl = URL.createObjectURL(file);
-        setPreview(objectUrl);
-    };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        // create a form data with the file and other data
-        const formData = new FormData();
-        formData.append("image", file);
-        formData.append("name", item.name);
-        formData.append("description", item.description);
-        // send the form data to the server
-        const createdItem = await createItem(formData);
+        const createdItem = await createItem({
+          title: item.name,
+          description: item.description,
+          image: item.imageUrl
+        });
         navigate(`/items/${createdItem.id}`, { replace: true });
     };
 
@@ -44,7 +27,6 @@ export default function ItemCreate() {
         setItem((prev) => ({
             ...prev,
             [name]: value
-
         }))
     };
 
@@ -66,13 +48,15 @@ export default function ItemCreate() {
           value={item.description}
           onChange={handleChange}
         />
-        <label htmlFor="custom-file-input">Click To Upload Shitty Picture</label>
-        <input type="file" name="image" onChange={handleFileChange} className="custom-file-input" id="custom-file-input" />
-        {preview && <img src={preview} alt="preview" width="200" height="200" />}
-        {!preview && <p>No image selected</p>}
+        <input
+          type="text"
+          placeholder="Image URL"
+          name="imageUrl"
+          value={item.imageUrl}
+          onChange={handleChange}
+        />
         <button type="submit">Post Item!!!</button>
       </form>
     </div>
   );
 }
-
