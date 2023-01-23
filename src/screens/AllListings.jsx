@@ -14,7 +14,6 @@ export default function Items() {
     const allItems = await getItems();
     setItems(allItems);
   }
-
   return (
     <div className="main">
         <h1>All Listings</h1>
