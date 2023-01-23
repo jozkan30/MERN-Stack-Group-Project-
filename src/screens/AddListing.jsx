@@ -8,6 +8,7 @@ export default function ItemCreate() {
     const [item, setItem] = useState({
         name: "",
         description: "",
+        
     });
 
     // new state variable to keep track of the selected file
