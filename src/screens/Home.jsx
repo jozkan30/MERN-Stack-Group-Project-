@@ -19,16 +19,16 @@ export default function Home() {
       </div>
       <div className="devTeam">
       <h2>Meet your dev team</h2>
-      {/* <img src="" alt="John"></img>
-      <p>A little blurby blurb about each of us.</p>
+      <img src="" alt="John"></img>
+      <p>Synergy-seeker. Game-changer. Value-architect.</p>
       <img src="" alt="Zack"></img>
-      <p>A little blurby blurb about each of us.</p>
+      <p>I'm good.</p>
       <img src="" alt="Justin"></img>
-      <p>A little blurby blurb about each of us.</p>
+      <p>Do whatever you think is good.</p>
       <img src="" alt="Xavier"></img>
-      <p>A little blurby blurb about each of us.</p>
+      <p>Write your own story.</p>
       <img src="" alt="Katherine"></img>
-      <p>A little blurby blurb about each of us.</p> */}
+      <p>I don't have anything right now. Sorry.</p>
     </div>
     </>
   )
