@@ -26,6 +26,7 @@ function App() {
           <Route path="/items" element={<Items />} />
           <Route path="/add-listing" element={<ItemCreate />} />
           <Route path="/items/:id" element={<ListingDetail />} />
+          <Route path="/items/:id/edit" element={<EditItem />} />
         </Routes>
       </div>
     </div>
