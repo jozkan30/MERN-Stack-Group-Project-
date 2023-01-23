@@ -1,6 +1,24 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import '../App.css';
+import { getItem } from '../services/items.js';
+import { useParams } from 'react-router-dom';
+
 export default function ListingDetail() {
+ 
+ const id = useParams()
+ 
+ const[item, setItem] = useState({})
+
+
+ async function fetchItem(){
+  let oneItem = await getItem(id.id)
+console.log(oneItem.description)
+setItem(oneItem)
+}
+
+useEffect(()=>{
+fetchItem()
+},[])
   return (
     <div className='whole'>
       <div className='innerBanner'>
@@ -8,11 +26,13 @@ export default function ListingDetail() {
       </div>
       <div className='infoContainer'>
         <div className='displayDeets'>
-          <div className='itemPic'>pic</div>
+          <div className='itemPic'>pic
+          <img className='theImage' src={item.image}></img>
+          </div>
           <div className='pickupDeets'>pickup deets</div>
         </div>
         <div className='buttonsContainer'>
-          <div className='itemDeets'>deets</div>
+          <div className='itemDeets'>{item.description}</div>
           <button className='edit'>Edit</button>
           <button className='iWantIt'>Gimme!</button>
         </div>
