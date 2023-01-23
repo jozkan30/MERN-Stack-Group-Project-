@@ -32,31 +32,32 @@ export default function ItemCreate() {
 
     return (
       <div>
-      <h1>Add Item</h1>
-      <form className="create-form" onSubmit={handleSubmit}>
-        <input
-          type="text"
-          placeholder="Item Name"
-          name="name"
-          value={item.name}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          placeholder="Item Description"
-          name="description"
-          value={item.description}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          placeholder="Image URL"
-          name="imageUrl"
-          value={item.imageUrl}
-          onChange={handleChange}
-        />
-        <button type="submit">Post Item!!!</button>
-      </form>
-    </div>
-  );
-}
+        <h1>Add Item</h1>
+        <form className="create-form" onSubmit={handleSubmit}>
+          <input
+            type="text"
+            placeholder="Item Name"
+            name="name"
+            value={item.name}
+            onChange={handleChange}
+          />
+          <input
+            type="text"
+            placeholder="Item Description"
+            name="description"
+            value={item.description}
+            onChange={handleChange}
+          />
+          <input
+            type="text"
+            placeholder="Image URL"
+            name="imageUrl"
+            value={item.imageUrl}
+            onChange={handleChange}
+          />
+          <img src={item.imageUrl} alt="item" />
+          <button type="submit">Post Item!!!</button>
+        </form>
+      </div>
+    );
+    }    
