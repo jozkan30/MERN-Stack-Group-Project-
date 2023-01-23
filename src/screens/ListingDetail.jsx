@@ -12,6 +12,7 @@ export default function ListingDetail() {
  const[item, setItem] = useState({})
 
 
+
  async function fetchItem(){
   let oneItem = await getItem(id.id)
 console.log(oneItem.description)
@@ -39,7 +40,7 @@ fetchItem()
         </div>
         <div className='buttonsContainer'>
           <div className='itemDeets'>{item.description}</div>
-          <button className='edit'>Edit</button>
+          <Link className='edit' to={"/items/:id/edit"}>Edit</Link>
           <button className='iWantIt'>Gimme!</button>
         </div>
         </div>
