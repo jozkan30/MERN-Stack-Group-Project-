@@ -51,7 +51,7 @@ const handleComment = async (e) => {
 
 useEffect(()=>{
 fetchItem()
-handleDelete()
+// handleDelete()
 },[])
 
   return (

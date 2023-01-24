@@ -15,17 +15,19 @@ export default function EditItem() {
   async function fetchItem() {
     let oneItem = await getItem(id.id);
     setItem(oneItem);
+    console.log(item)
   }
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     await updateItem({...item});
     navigate(`/items/${item.id}`, { replace: true });
-};
+  };
 
   const handleChange = (e) => {
       const { value, name } = e.target;
       setItem({...item, [name]: value });
+      console.log(item)
   };
 
   useEffect(() => {
@@ -39,31 +41,32 @@ export default function EditItem() {
         <input
           name="titleEdit"
           type="text"
-          onChange={handleChange}
+          // onChange={handleChange}
         />
         <div>Edit the price:</div>
         <input
           name="priceEdit"
           type="text"
-          onChange={handleChange}
+          value={item.price}
+          // onChange={handleChange}
         />
         <div>Edit the description:</div>
         <input
           name="descriptionEdit"
           type="text"
-          onChange={handleChange}
+          // onChange={handleChange}
         />
         <div>Edit the category:</div>
         <input
           name="categoryEdit"
           type="text"
-          onChange={handleChange}
+          // onChange={handleChange}
         />
         <div>Edit image link:</div>
         <input
           name="imageEdit"
           type="link"
-          onChange={handleChange}
+          // onChange={handleChange}
         />
         <button type="submit">Submit</button>
       </form>
