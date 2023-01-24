@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import {Link} from 'react-router-dom';
-import '../App.css';
+import { useState, useEffect } from "react";
+import { deleteItem, getItem } from "../services/items.js";
+import { Link, useParams, useNavigate } from "react-router-dom";
 
 import { getItem, deleteItem,updateItem } from '../services/items.js';
 
@@ -10,30 +10,27 @@ export default function ListingDetail() {
   const [ comment, setComment ] = useState({
     comments: ""
   })
-  let oneItem
+ 
  const id = useParams()
  let remove;
  const[item, setItem] = useState({})
-
- 
-
+ const[gimmeCount, gimmeCountSet] = useState(0)
+ let want;
  async function handleDelete(){
    remove = await deleteItem(id.id)
+ 
  }
 
 
- const [gimme, setGimme] = useState(0)
-
- async function handleGimme (){
-  const whatGimme = await getItem(id.id)
-  console.log(whatGimme)
+ async function handleGimme(){
+ want = () => gimmeCountSet( prev => prev +1)
+updateItem(id.id)
 }
 
  async function fetchItem(){
-  oneItem = await getItem(id.id)
+  let oneItem = await getItem(id.id)
 
-
-//console.log(oneItem.count)
+//console.log(oneItem.description)
 
 setItem(oneItem)
 }
@@ -54,19 +51,23 @@ const handleComment = async (e) => {
 
 useEffect(()=>{
 fetchItem()
-handleGimme()
+handleDelete()
 },[])
 
-
+  return (
+    <div className='whole'>
+      <div className='innerBanner'>
+        
+          <Link className='closeButton' to={`/items`}>Close</Link>
+       
 
 
   return (
-    <div className="whole">
-      <div className="innerBanner">
-        <Link className="closeButton" to={`/items`}>
-          Close
-        </Link>
-
+    <div className="card">
+      <div>
+        <h1>{item.title}</h1>
+        <img src={`${item.image}`} className="pics" alt={`${item.id}`} />
+        <p> {item.comments} </p>
       </div>
       <div className='infoContainer'>
         <div className='displayDeets'>
@@ -80,7 +81,7 @@ handleGimme()
         <div className='buttonsContainer'>
           <div className='itemDeets'>{item.description}</div>
           <Link className='edit' to={`/items/:id/edit`}>Edit</Link>
-          <Link to={'/items'} onClick={handleGimme} className='iWantIt'>Gimme!</Link>
+          <Link className='iWantIt'>Gimme!</Link>
           <Link to={'/items'} className='deleteButton' onClick={remove}>Delete</Link>
 
         </div>
