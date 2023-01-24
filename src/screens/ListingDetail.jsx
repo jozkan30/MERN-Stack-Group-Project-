@@ -54,14 +54,7 @@ fetchItem()
 handleDelete()
 },[])
 
-  return (
-    <div className='whole'>
-      <div className='innerBanner'>
-        
-          <Link className='closeButton' to={`/items`}>Close</Link>
-       
-
-
+  
   return (
     <div className="whole">
       <div className="innerBanner">
