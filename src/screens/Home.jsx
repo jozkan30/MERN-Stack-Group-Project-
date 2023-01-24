@@ -9,28 +9,14 @@ export default function Home() {
     navigate("/items", { replace: true })
   }
   return (
-    <>
+    <div className="container">
     <div className="heading">
-      <h1>HEY THERE! COME GET SOME FREE STUFF</h1>
-      </div>
-      <div className="body">
+      <h1>HEY THERE! COME GET SOME FREE STUFF ?</h1>
       <p>Have you ever wanted to have some stuff wihtout having to pay for that? Well now you can. Click below to see all of the free stuff available, and click on an image to find out more details like who's giving it away and where you can pick it up. You ready to finally have some stuff?!</p>
       <button onClick={handleNav}>Click to see some free stuff</button>
       </div>
       <div className="devTeam">
       <h2>Meet your dev team</h2>
-
-      {/* <img src="" alt="John"></img>
-      <p>A little blurby blurb about each of us.</p>
-      <img src="" alt="Zack"></img>
-      <p>A little blurby blurb about each of us.</p>
-      <img src="" alt="Justin"></img>
-      <p>A little blurby blurb about each of us.</p>
-      <img src="" alt="Xavier"></img>
-      <p>A little blurby blurb about each of us.</p>
-      <img src="" alt="Katherine"></img>
-       */}
-
       <img src="https://pbs.twimg.com/media/B8wTjrKCEAE2O4P.jpg" alt="John"></img>
       <p>Synergy-seeker. Game-changer. Value-architect.</p>
       <img src="https://i.imgur.com/Lpmwvql.png" alt="Zack"></img>
@@ -43,6 +29,7 @@ export default function Home() {
       <p>I don't have anything right now. Sorry.</p>
 
     </div>
-    </>
+    </div>
+
   )
 }

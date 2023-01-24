@@ -1,83 +1,38 @@
-import { Link } from "react-router-dom";
-import React, { useEffect, useState } from 'react';
-import '../App.css';
-import { getItem, updateItem } from '../services/items.js';
-import { useParams } from 'react-router-dom';
+import { useState, useEffect } from "react";
+import { deleteItem, getItem } from "../services/items.js";
+import { Link, useParams, useNavigate } from "react-router-dom";
 
+export default function ItemDetail() {
+  const [item, setItem] = useState({});
 
-
-export default function ListingDetail() {
- const id = useParams()
- let remove;
- const[item, setItem] = useState({})
- const[gimmeCount, gimmeCountSet] = useState(0)
- let want;
- async function handleDelete(){
-   remove = await deleteItem(id.id)
- 
- }
-
-
- async function handleGimme(){
- want = () => gimmeCountSet( prev => prev +1)
-updateItem(id.id)
-}
-
- async function fetchItem(){
-  let oneItem = await getItem(id.id)
-
-//console.log(oneItem.description)
-
-setItem(oneItem)
-}
-
+  let { id } = useParams();
+  let navigate = useNavigate();
 
   useEffect(() => {
     fetchItem();
   }, []);
 
-useEffect(()=>{
-fetchItem()
-handleDelete()
-},[])
+  async function fetchItem() {
+    let oneItem = await getItem(id);
+    setItem(oneItem);
+  }
+
+  async function handleDelete() {
+    await deleteItem(id);
+    navigate("/items", { replace: true });
+  }
 
   return (
-    <div className="whole">
-      <div className="innerBanner">
-        <Link className="closeButton" to={`/items`}>
-          Close
-        </Link>
-
+    <div className="card">
+      <div>
+        <h1>{item.title}</h1>
+        <img src={`${item.image}`} className="pics" alt={`${item.id}`} />
+        <p> {item.comments} </p>
       </div>
-      <div className='infoContainer'>
-        <div className='displayDeets'>
-          <div className='itemPic'>
-            <h1> {item.title} </h1>
-          <img className='theImage' src={item.image}></img>
-          </div>
-          <div className='pickupDeets'>pickup deets</div>
-        </div>
-
-        <div className='buttonsContainer'>
-          <div className='itemDeets'>{item.description}</div>
-          <Link className='edit' to={`/items/:id/edit`}>Edit</Link>
-          <Link className='iWantIt'>Gimme!</Link>
-          <Link to={'/items'} className='deleteButton' onClick={remove}>Delete</Link>
-
-        </div>
-        </div>
-
-      
-      <form className='commentsSection'>
-          <input 
-          type='text' 
-          className='commentField' 
-          placeholder='Enter Comment' 
-          name="comment"
-          ></input>
-
-          <button type='submit' className='commentButton'>⌲</button>
-      </form>
+      <Link to={`/items/${item._id}/edit`}>
+        <button>Edit item</button>
+      </Link>
+      <button onClick={handleDelete}> Eleminate !</button>
     </div>
   );
 }
