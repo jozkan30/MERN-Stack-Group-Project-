@@ -17,9 +17,10 @@ export default function ListingDetail() {
 console.log(oneItem.description)
 setItem(oneItem)
 }
- function handleComment() {
 
- }
+function handleComment (){
+  
+}
 
 useEffect(()=>{
 fetchItem()
@@ -41,7 +42,7 @@ fetchItem()
         </div>
         <div className='buttonsContainer'>
           <div className='itemDeets'>{item.description}</div>
-          <Link className='editButton' to={`/items/:id/edit`} item={item}>Edit</Link>
+          <Link className='editButton' to={`/items/${item._id}/edit`} params={{item: 'item'}}>Edit</Link>
           <button className='iWantIt'>Gimme!</button>
         </div>
         </div>
