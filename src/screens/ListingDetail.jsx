@@ -10,27 +10,30 @@ export default function ListingDetail() {
   const [ comment, setComment ] = useState({
     comments: ""
   })
- 
+  let oneItem
  const id = useParams()
  let remove;
  const[item, setItem] = useState({})
- const[gimmeCount, gimmeCountSet] = useState(0)
- let want;
+
+ 
+
  async function handleDelete(){
    remove = await deleteItem(id.id)
- 
  }
 
 
- async function handleGimme(){
- want = () => gimmeCountSet( prev => prev +1)
-updateItem(id.id)
+ const [gimme, setGimme] = useState(0)
+
+ async function handleGimme (){
+  const whatGimme = await getItem(id.id)
+  console.log(whatGimme)
 }
 
  async function fetchItem(){
-  let oneItem = await getItem(id.id)
+  oneItem = await getItem(id.id)
 
-//console.log(oneItem.description)
+
+//console.log(oneItem.count)
 
 setItem(oneItem)
 }
@@ -51,15 +54,10 @@ const handleComment = async (e) => {
 
 useEffect(()=>{
 fetchItem()
-handleDelete()
+handleGimme()
 },[])
 
-  return (
-    <div className='whole'>
-      <div className='innerBanner'>
-        
-          <Link className='closeButton' to={`/items`}>Close</Link>
-       
+
 
 
   return (
@@ -82,7 +80,7 @@ handleDelete()
         <div className='buttonsContainer'>
           <div className='itemDeets'>{item.description}</div>
           <Link className='edit' to={`/items/:id/edit`}>Edit</Link>
-          <Link className='iWantIt'>Gimme!</Link>
+          <Link to={'/items'} onClick={handleGimme} className='iWantIt'>Gimme!</Link>
           <Link to={'/items'} className='deleteButton' onClick={remove}>Delete</Link>
 
         </div>
