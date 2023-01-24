@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { deleteItem, getItem } from "../services/items.js";
 import { Link, useParams, useNavigate } from "react-router-dom";
+import './ListingDetail.css'
 
 export default function ItemDetail() {
   const [item, setItem] = useState({});
@@ -27,12 +28,12 @@ export default function ItemDetail() {
       <div>
         <h1>{item.title}</h1>
         <img src={`${item.image}`} className="pics" alt={`${item.id}`} />
-        <p> {item.comments} </p>
+        <p> {item.description} </p>
       </div>
       <Link to={`/items/${item._id}/edit`}>
-        <button>Edit item</button>
+        <button className="edit-eliminate">Edit item</button>
       </Link>
-      <button onClick={handleDelete}> Eleminate !</button>
+      <button className="edit-eliminate" onClick={handleDelete}> Eleminate !</button>
     </div>
   );
 }

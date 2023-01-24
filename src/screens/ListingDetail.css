@@ -1,0 +1,14 @@
+.card{
+    text-align: center;
+}
+
+.pics{
+    height: 500px;
+    width: 500px;
+}
+
+.edit-eliminate{
+    background-color:#404258 ;
+    padding: 10px;
+    margin: 5px;
+}
