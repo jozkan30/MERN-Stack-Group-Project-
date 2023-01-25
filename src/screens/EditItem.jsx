@@ -1,84 +1,100 @@
-import { useState, useEffect } from "react";
-import { useNavigate, useParams } from "react-router-dom";
-import { updateItem, getItem } from "../services/items.js";
+import React, { useEffect, useState, useRef } from "react";
+import "../App.css";
+import { getItem } from "../services/items.js";
+import { useParams } from "react-router-dom";
+import { updateItem } from "../services/items.js";
+import { useNavigate } from "react-router-dom";
 
-export default function ItemEdit() {
+export default function EditItem() {
+
+  const titleRef= useRef(); 
+  const priceRef = useRef() 
+  const descriptionRef = useRef(); 
+  const categoryRef = useRef(); 
+  const imageRef = useRef(); 
+
+  const id = useParams(); 
+
+  let navigate = useNavigate();
+
   const [item, setItem] = useState({
-    _id: "",
     title: "",
+    price: "",
     description: "",
+    category: "",
     image: "",
-    comments: ""
   });
 
-  let { id } = useParams();
-  let navigate = useNavigate();
+  async function fetchItem() {
+      let oneItem = await getItem(id.id);
+      setItem(oneItem);
+    }
 
   useEffect(() => {
     fetchItem();
-  }, []);
-
-  async function fetchItem() {
-    let oneItem = await getItem(id);
-    setItem(oneItem);
-  }
+    }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await updateItem(id, item);
-    navigate(`/items/${item._id}`, { replace: true });
-  };
-
-  const handleChange = (e) => {
-    const { value, title } = e.target;
-
-    setItem((prev) => ({
-      ...prev,
-      [title]: value
-    }))
+    console.log(id.id);
+    const updatedItem = {
+      title: !titleRef.current.value ? item.title: titleRef.current.value,
+      price: !priceRef.current.value ? item.price: priceRef.current.value,
+      description: !descriptionRef.current.value ? item.description: descriptionRef.current.value,
+      category: !categoryRef.current.value ? item.category: categoryRef.current.value,
+      image: !imageRef.current.value ? item.image: imageRef,
+    }
+    const updated = await updateItem(id.id, updatedItem);
+    console.log(updated); 
+    navigate(`/items/${id.id}`, { replace: true });
+    
   };
 
   return (
     <div>
-      <h1>Create Screen</h1>
-      <form className="create-form" onSubmit={handleSubmit}>
+      <form className="editForm" onSubmit={handleSubmit}>
+        <div>Edit the title:</div>
         <input
+          name="titleEdit"
           type="text"
-          placeholder=" ID"
-          name="_id"
-          value={item._id}
-          onChange={handleChange}
+          // onChange={handleChange}
+          placeholder={item.title}
+          // value={item.title}
+          ref={titleRef}        
         />
-         <input
-          type="text"
-          placeholder="Title"
-          name="title"
-          value={item.title}
-          onChange={handleChange}
-        />
-         <input
-          type="text"
-          placeholder="Please add a "
-          name=" description"
-          value={item.description}
-          onChange={handleChange}
-        />
+        <div>Edit the price:</div>
         <input
+          name="priceEdit"
           type="text"
-          placeholder=" Enter image URL"
-          name="image"
-          value={item.image}
-          onChange={handleChange}
+          // onChange={handleChange}
+          placeholder={item.price}
+          ref={priceRef}
         />
+        <div>Edit the description:</div>
         <input
+          name="descriptionEdit"
           type="text"
-          placeholder="Comments?"
-          name="comment"
-          value={item.comments}
-          onChange={handleChange}
-        /> 
-
-        <button type="submit">Update</button>
+          // onChange={handleChange}
+          placeholder={item.description}
+          ref={descriptionRef}
+        />
+        <div>Edit the category:</div>
+        <input
+          name="categoryEdit"
+          type="text"
+          // onChange={handleChange}
+          placeholder={item.category}
+          ref={categoryRef}
+        />
+        <div>Edit image link:</div>
+        <input
+          name="imageEdit"
+          type="text"
+          // onChange={handleChange}
+          placeholder={item.image}
+          ref={imageRef}
+        />
+        <button type="submit">Submit</button>
       </form>
     </div>
   );

@@ -36,4 +36,4 @@ export default function ItemDetail() {
       <button className="edit-eliminate" onClick={handleDelete}> Eleminate !</button>
     </div>
   );
-}
+};
