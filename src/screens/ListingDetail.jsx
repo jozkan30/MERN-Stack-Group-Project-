@@ -54,6 +54,7 @@ fetchItem()
 // handleDelete()
 },[])
 
+  
   return (
     <div className="whole">
       <div className="innerBanner">
