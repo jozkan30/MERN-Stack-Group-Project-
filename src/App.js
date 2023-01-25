@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import Nav from "./components/Nav.jsx";
 import Items from "./screens/AllListings.jsx";
 import Home from "./screens/Home.jsx";
-import EditItem from "./screens/EditItem.jsx";
+import ItemEdit from "./screens/EditItem.jsx";
 import ItemCreate from "./screens/AddListing";
 import ListingDetail from "./screens/ListingDetail.jsx";
 
