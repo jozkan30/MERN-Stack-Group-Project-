@@ -6,6 +6,10 @@ import Home from "./screens/Home.jsx";
 import ItemEdit from "./screens/EditItem.jsx";
 import ItemCreate from "./screens/AddListing";
 import ListingDetail from "./screens/ListingDetail.jsx";
+
+import SignIn from "./screens/SignIn/SignIn.jsx";
+import SignUp from "./screens/SignUp/SignUp.jsx";
+
 import Footer from "./components/Footer";
 
 
@@ -21,7 +25,11 @@ function App() {
           <Route path="/items" element={<Items />} />
           <Route path="/add-listing" element={<ItemCreate />} />
           <Route path="/items/:id" element={<ListingDetail />} />
+          <Route path="/items/:id/edit" element={<EditItem />} />
+          <Route path="/sign-up" element={<SignUp/>}/>
+          <Route path="/sign-in" element={<SignIn/>}/>
           <Route path="/items/:id/edit" element={<ItemEdit />} />
+
         </Routes>
       </div>
       <Footer />

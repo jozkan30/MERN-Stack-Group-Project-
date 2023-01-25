@@ -1,0 +1,20 @@
+.signIn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signInForm{
+display:flex;
+flex-direction: column;
+}
+
+.signinSignUpButton{
+align-self: flex-end;
+}
+
+.signinButton:hover{
+    background-color: lightgreen;
+    transition-duration: .4s;
+}
