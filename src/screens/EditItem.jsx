@@ -42,8 +42,9 @@ export default function EditItem() {
       price: !priceRef.current.value ? item.price: priceRef.current.value,
       description: !descriptionRef.current.value ? item.description: descriptionRef.current.value,
       category: !categoryRef.current.value ? item.category: categoryRef.current.value,
-      image: !imageRef.current.value ? item.image: imageRef,
+      image: !imageRef.current.value ? item.image: imageRef.current.value
     }
+
     const updated = await updateItem(id.id, updatedItem);
     console.log(updated); 
     navigate(`/items/${id.id}`, { replace: true });
@@ -89,7 +90,7 @@ export default function EditItem() {
         <div>Edit image link:</div>
         <input
           name="imageEdit"
-          type="text"
+          type="url"
           // onChange={handleChange}
           placeholder={item.image}
           ref={imageRef}
