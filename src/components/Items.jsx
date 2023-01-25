@@ -5,11 +5,7 @@ import './items.css'
 
 export default function Item({ item }) {
 
-const [gimme, setGimme] = useState(0)
 
-  async function handleGimme (){
-    
-  }
 
   return (
     <div className="all-items">

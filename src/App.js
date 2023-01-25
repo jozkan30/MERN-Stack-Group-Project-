@@ -5,10 +5,8 @@ import Home from "./screens/Home.jsx";
 import ItemEdit from "./screens/EditItem.jsx";
 import ItemCreate from "./screens/AddListing";
 import ListingDetail from "./screens/ListingDetail.jsx";
-
 import SignIn from "./screens/SignIn/SignIn.jsx";
 import SignUp from "./screens/SignUp/SignUp.jsx";
-
 import Footer from "./components/Footer";
 
 
