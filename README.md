@@ -59,3 +59,6 @@ We spent an entire afternoon wireframing, making a calendar and team requirement
 - An "add to cart" feature, that would bring you to a cart screen where you can see the items that you've added to your cart.
 - User authentication
 - Being able to save your cart for a certian amount of time even after you log out and log back in
+
+
+[comment]: <> (This is a comment, it will not be included)
