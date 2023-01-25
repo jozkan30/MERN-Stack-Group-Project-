@@ -18,3 +18,8 @@
 .detailDescription{
     font-family:monospace;
 }
+
+.eliminate:hover{
+    background-color:red;
+    transition-duration: .4s;
+}
