@@ -15,6 +15,10 @@ export default function Nav() {
         <NavLink className={"navBarInfo"} to="/add-listing">
           Add A New Item
         </NavLink>
+        <div className="authButtons">
+        <NavLink className={"navBarInfo"} id="signinButton" to="/sign-in">Sign In</NavLink>
+        <NavLink className={"navBarInfo"} id="signupButton" to="/sign-up" >Sign Up</NavLink>
+        </div>
       </nav>
     );
   }
