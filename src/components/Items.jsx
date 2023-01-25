@@ -23,7 +23,6 @@ const [gimme, setGimme] = useState(0)
 
         <p className="itemTitle" > {item.title} </p>
 
-        <p> {item.title} </p>
 
     </div>
   );
