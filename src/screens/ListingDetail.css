@@ -15,8 +15,16 @@
     margin: 5px;
 }
 
+.editButton{
+    margin: 5px;
+}
+
 .detailDescription{
     font-family:monospace;
+}
+
+.eliminate{
+    margin: 5px;
 }
 
 .eliminate:hover{

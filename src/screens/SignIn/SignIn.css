@@ -6,15 +6,33 @@
 }
 
 .signInForm{
-display:flex;
-flex-direction: column;
+    display:flex;
+    flex-direction: column;
 }
 
 .signinSignUpButton{
-align-self: flex-end;
+    align-self: flex-end;
+    color: black;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    transform: scale(1);
+    margin-right: 5px;
+}
+
+.signinButton{
+    margin: 5px;
 }
 
 .signinButton:hover{
     background-color: lightgreen;
     transition-duration: .4s;
+}
+
+.signinInput{
+    width: 300px;
+    border-radius: 5px;
+    padding: 2px;
 }

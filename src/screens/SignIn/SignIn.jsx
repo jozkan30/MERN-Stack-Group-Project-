@@ -7,11 +7,15 @@ export default function SignIn(){
     
     return(
     <section className="signIn">
-        <button className="signinSignUpButton"  >Sign-Up</button>
+        <Link className="signinSignUpButton" to="/sign-up">
+            <button>Sign-Up</button>
+        </Link>
         <form className="signInForm">
-            <input className="signInUserName" placeholder="Enter Username/Email"></input>
-            <input className="signInPassword" placeholder="Enter Password"></input>
-            <button className="signinButton">Sign In</button>
+            <input className="signinInput" id="signInUserName" placeholder="Enter Username/Email"></input>
+            <input className="signinInput" id="signInPassword" placeholder="Enter Password"></input>
+            <Link>
+                <button className="signinButton">Sign In</button>
+            </Link>
         </form>
     </section>
     )
