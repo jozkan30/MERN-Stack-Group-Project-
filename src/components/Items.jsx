@@ -20,8 +20,11 @@ const [gimme, setGimme] = useState(0)
         className="listed-item-img"
         />
         </Link>
+
         <p className="itemTitle" > {item.title} </p>
-        <div className="howManyPeople">X amount of people want this item</div>
+
+        <p> {item.title} </p>
+
     </div>
   );
 }
