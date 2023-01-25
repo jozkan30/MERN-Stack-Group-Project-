@@ -15,7 +15,6 @@ Welcome to our digital curbside. We want this to be an online hub where you can 
 - A thoroughly developed, beautiful README.md file.
 - A team expectations document denoting each coders strengths and weaknesses, timeline, goals and values.
 --- 
-    \
     **Collaboration:**
 - Each team member contributing equally
 - Each team member having a solid understanding of the entire project, even the features implemented by other team members.
