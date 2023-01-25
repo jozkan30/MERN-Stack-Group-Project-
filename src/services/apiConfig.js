@@ -3,8 +3,8 @@ import axios from "axios";
 let apiUrl;
 
 const apiUrls = {
-  production: "https://fake-store-api-production-c25d.up.railway.app",
-  development: "https://fake-store-api-production-c25d.up.railway.app",
+  production: "https://fake-store-api-production-c25d.up.railway.app/",
+  development: "https://fake-store-api-production-c25d.up.railway.app/",
 };
 
 if (window.location.hostname === "localhost") {
