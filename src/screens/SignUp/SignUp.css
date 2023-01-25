@@ -1,4 +1,4 @@
-.signUp{
+/* .signUp{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,4 +17,4 @@ align-self: flex-end;
 .signupButton:hover{
     background-color: lightgreen;
     transition-duration: .4s;
-}
+} */
