@@ -6,6 +6,8 @@ import Home from "./screens/Home.jsx";
 import ItemEdit from "./screens/EditItem.jsx";
 import ItemCreate from "./screens/AddListing";
 import ListingDetail from "./screens/ListingDetail.jsx";
+import Footer from "./components/Footer";
+
 
 function App() {
   return (
@@ -22,6 +24,7 @@ function App() {
           <Route path="/items/:id/edit" element={<ItemEdit />} />
         </Routes>
       </div>
+      <Footer />
     </div>
   );
 }

@@ -12,8 +12,7 @@ export default function Item({ item }) {
         className="listed-item-img"
         />
         </Link>
-        <p className="itemTitle" > {item.title} </p>
-        <div className="howManyPeople">X amount of people want this shit</div>
+        <p> {item.title} </p>
     </div>
   );
 }
