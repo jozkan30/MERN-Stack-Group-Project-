@@ -1,5 +1,5 @@
 .footer {
-    
+
   background-color: black;
   color: white;
 }
@@ -10,7 +10,6 @@
   align-items: center;
  
 }
-
 .contact-methods {
   display: flex;
   justify-content: space-between;

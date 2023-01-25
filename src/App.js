@@ -1,4 +1,3 @@
-import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Nav from "./components/Nav.jsx";
 import Items from "./screens/AllListings.jsx";
@@ -25,7 +24,6 @@ function App() {
           <Route path="/items" element={<Items />} />
           <Route path="/add-listing" element={<ItemCreate />} />
           <Route path="/items/:id" element={<ListingDetail />} />
-          <Route path="/items/:id/edit" element={<EditItem />} />
           <Route path="/sign-up" element={<SignUp/>}/>
           <Route path="/sign-in" element={<SignIn/>}/>
           <Route path="/items/:id/edit" element={<ItemEdit />} />
