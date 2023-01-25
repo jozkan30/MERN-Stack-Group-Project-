@@ -28,12 +28,13 @@ export default function ItemDetail() {
       <div>
         <h1>{item.title}</h1>
         <img src={`${item.image}`} className="pics" alt={`${item.id}`} />
-        <p> {item.description} </p>
+        <p className="detailDescription">{item.description}</p>
+        <p> {item.comments} </p>
       </div>
       <Link to={`/items/${item._id}/edit`}>
-        <button className="edit-eliminate">Edit item</button>
+        <button>Edit item</button>
       </Link>
-      <button className="edit-eliminate" onClick={handleDelete}> Eleminate !</button>
+      <button onClick={handleDelete}> Eleminate !</button>
     </div>
     
   );

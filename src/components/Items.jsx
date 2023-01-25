@@ -1,8 +1,16 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useParams} from "react-router-dom";
+import { useState, useEffect } from "react";
 import './items.css'
 
 export default function Item({ item }) {
+
+const [gimme, setGimme] = useState(0)
+
+  async function handleGimme (){
+    
+  }
+
   return (
     <div className="all-items">
       <Link to={`/items/${item._id}`}>
@@ -12,8 +20,11 @@ export default function Item({ item }) {
         className="listed-item-img"
         />
         </Link>
+
         <p className="itemTitle" > {item.title} </p>
-        <div className="howManyPeople">X amount of people want this shit</div>
+
+        <p> {item.title} </p>
+
     </div>
   );
 }
