@@ -36,5 +36,6 @@ export default function ItemDetail() {
       </Link>
       <button onClick={handleDelete}> Eleminate !</button>
     </div>
+    
   );
 };

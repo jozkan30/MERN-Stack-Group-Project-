@@ -1,5 +1,4 @@
 import React, { useEffect, useState, useRef } from "react";
-import "../App.css";
 import { getItem } from "../services/items.js";
 import { useParams } from "react-router-dom";
 import { updateItem } from "../services/items.js";
