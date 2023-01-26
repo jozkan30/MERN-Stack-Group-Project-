@@ -1,4 +1,4 @@
-/* .signUp{
+.signUp{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,7 +18,7 @@ align-self: flex-end;
 .signupButton:hover{
     background-color: lightgreen;
     transition-duration: .4s;
-<<<<<<< HEAD
+
 }
 @media only screen and (max-width: 600px) { 
     .signUpForm {
@@ -29,6 +29,4 @@ align-self: flex-end;
         max-width: 100%;
     }
 }
-=======
-} */
->>>>>>> 30b4a4bd4b0c34c134bb19c39ef3c9dbbd87157a
+
