@@ -10,7 +10,7 @@ export default function Nav() {
           Home
         </NavLink>
         <NavLink className={"navBarInfo"} to="/items">
-          All Listings {" "}
+          All Listings 
         </NavLink>
         <NavLink className={"navBarInfo"} to="/add-listing">
           Add A New Item
