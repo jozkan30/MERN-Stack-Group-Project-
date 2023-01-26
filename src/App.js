@@ -8,6 +8,8 @@ import ListingDetail from "./screens/ListingDetail.jsx";
 import SignIn from "./screens/SignIn/SignIn.jsx";
 import SignUp from "./screens/SignUp/SignUp.jsx";
 import Footer from "./components/Footer";
+import './index.css'
+
 
 
 function App() {
