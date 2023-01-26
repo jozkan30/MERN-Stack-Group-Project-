@@ -3,6 +3,8 @@
   background-color: black;
   color: white;
   position: sticky;
+  position: absolute;
+  width: 100%;
 
 }
 .contact-header {
