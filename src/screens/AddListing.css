@@ -1,134 +1,136 @@
 .create-form {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    margin: 20px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: grey;
-    }
-    
-    .create-form input {
-    margin: 10px 0;
-    padding: 10px;
-    width: 80%;
-    background-color: aqua;
-    }
-    
-    .create-form button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 80%;
-    padding: 14px 20px;
-    font-size: 30px;
-    }
-    
-    .create-form button:hover {
-    opacity: 0.8;
-    }
-    
-    h1 {
-    text-align: center;
-    font-size: 40px;
-    font-weight: bold;
-    
-    padding: 10px;
-    font-style: oblique;
-    }
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: grey;
+}
 
-    .create-form input:hover {
-        border: 1px solid #4CAF50;
-    }
+.create-form input {
+  margin: 10px 0;
+  padding: 10px;
+  width: 56%;
+  background-color: rgb(203, 200, 200);
+  
+}
 
-    body {
-        background-color: rgb(216, 216, 216);
-      }
-      
-      .custom-file-input {
-        width: 80%;
-        padding: 10px;
-        margin: 10px 0;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        background-color: #fff;
-        cursor: pointer;
-        font-size: 14px;
-        text-align: center;
-        transition: all 0.2s ease-in-out;
+.create-form button {
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  padding: 14px 20px;
+  font-size: 30px;
+  float: right;
 
-    }
-    
-    .custom-file-input:hover {
-        border: 1px solid #4CAF50;
-        background-color: #f1f1f1;
-        transform: scale(1.05);
-    }
-    
-    input[type="file"]{
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 1rem;
-        display: none;
-    }
-    
-    label[for="custom-file-input"] {
-        /* Add button styles */
-        background-color: #4CAF50;
-        color: white;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        cursor: pointer;
-        width: 80%;
-        text-align: center;
-        display: inline-block;
-        /* Add hover effect */
-        transition: all 0.2s ease-in-out;
-    }
-    
-    label[for="custom-file-input"]:hover {
-        /* Add hover styles */
-        background-color: #3e8e41;
-    }
-    
-    .create-form img {
-        width: 200px;
-        height: 200px;
-        margin: 10px 0;
-    }
-    
-    .create-form p {
-        text-align: center;
-        margin: 10px 0;
-        color: gray;
-    }
-    
-    .create-form label{
-        display: inline-block;
-        padding: 6px 12px;
-        font-size: 14px;
-        font-weight: 600;
-        text-align: center;
-        white-space: nowrap;
-        vertical-align: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-        border: 1px solid transparent;
-        border-radius: 4px;
-        background-color: #4CAF50;
-        color: #fff;
-    }
-    
-    .create-form input[type=file]{
-        display: none;
-    }
-    
-    
-    
-    
+  border-radius: 1px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 100px;
+}
+
+.create-form button:hover {
+  opacity: 0.8;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+
+  padding: 10px;
+  font-style: oblique;
+}
+
+.create-form input:hover {
+  border: 1px solid #4caf50;
+}
+
+body {
+  background-color: rgb(216, 216, 216);
+}
+
+.custom-file-input {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.custom-file-input:hover {
+  border: 1px solid #4caf50;
+  background-color: #f1f1f1;
+  transform: scale(1.05);
+}
+
+input[type="file"] {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1rem;
+  display: none;
+}
+
+label[for="custom-file-input"] {
+  /* Add button styles */
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 80%;
+  text-align: center;
+  display: inline-block;
+  /* Add hover effect */
+  transition: all 0.2s ease-in-out;
+}
+
+label[for="custom-file-input"]:hover {
+  /* Add hover styles */
+  background-color: #3e8e41;
+}
+
+.create-form img {
+  width: 200px;
+  height: 200px;
+  margin: 10px 0;
+}
+
+.create-form p {
+  text-align: center;
+  margin: 10px 0;
+  color: gray;
+}
+
+.create-form label {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.create-form input[type="file"] {
+  display: none;
+}
+

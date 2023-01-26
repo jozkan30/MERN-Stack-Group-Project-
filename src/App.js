@@ -9,7 +9,10 @@ import ListingDetail from "./screens/ListingDetail.jsx";
 import SignIn from "./screens/SignIn/SignIn.jsx";
 import SignUp from "./screens/SignUp/SignUp.jsx";
 import Footer from "./components/Footer";
+
+
 import { verifyUser } from './services/users'
+
 
 
 function App() {
