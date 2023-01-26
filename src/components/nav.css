@@ -6,7 +6,9 @@
     border-radius: 10px;
     width: 100%;
     background-color:#404258;
-    
+    position: fixed;
+    top: 0;
+   z-index: 1;
   }
 
   .navBarInfo {
@@ -85,4 +87,8 @@
     
     #logoutButton:active {
     background-color: #da190b;
+    }
+
+    body {
+      padding-top: 80px;
     }
