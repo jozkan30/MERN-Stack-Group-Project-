@@ -7,9 +7,13 @@ import "./AddListing.css";
 export default function ItemCreate() {
   const [item, setItem] = useState({
     title: "",
+    price: "",
     description: "",
-    image: "",
-    comments: "",
+    category: "",
+    image: ""
+    
+    
+    
   });
   
   let navigate = useNavigate();
@@ -18,8 +22,10 @@ export default function ItemCreate() {
     e.preventDefault();
     const createdItem = await createItem({
       title: item.name,
+      price: item.price,
       description: item.description,
-      image: item.imageUrl,
+      category: item.category,
+      image: item.imageURL,
     });
     navigate(`/items/${createdItem.id}`, { replace: true });
   };
@@ -45,6 +51,13 @@ export default function ItemCreate() {
         />
         <input
           type="text"
+          placeholder="Item Price"
+          name="name"
+          value={item.price}
+          onChange={handleChange}
+        />
+        <input
+          type="text"
           placeholder="Item Description"
           name="description"
           value={item.description}
@@ -52,8 +65,15 @@ export default function ItemCreate() {
         />
         <input
           type="text"
-          placeholder="Image URL"
-          name="imageUrl"
+          placeholder="Category"
+          name="description"
+          value={item.category}
+          onChange={handleChange}
+        />
+        <input
+          type="text"
+          placeholder="Image"
+          name="imageURL"
           value={item.imageUrl}
           onChange={handleChange}
         />

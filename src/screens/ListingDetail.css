@@ -1,5 +1,6 @@
 .card{
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .pics{
@@ -21,13 +22,9 @@
 
 .detailDescription{
     font-family:monospace;
+    text-align: center;
 }
 
-.eliminate{
-    margin: 5px;
-}
-
-.eliminate:hover{
-    background-color:red;
-    transition-duration: .4s;
+.editItem{
+    margin: 8px;
 }
