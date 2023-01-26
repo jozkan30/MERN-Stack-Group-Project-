@@ -31,6 +31,7 @@ margin-right: 5px;
 .signupButton:hover{
     background-color: lightgreen;
     transition-duration: .4s;
+
 }
 
 .signupInput{
@@ -39,3 +40,4 @@ margin-right: 5px;
     padding: 2px;
     margin: 5px;
 }
+

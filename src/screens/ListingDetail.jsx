@@ -32,6 +32,7 @@ export default function ItemDetail() {
         <p> {item.comments} </p>
       </div>
       <Link to={`/items/${item._id}/edit`}>
+
         <button className="editButton">Edit item</button>
       </Link>
       <button className="eliminate" onClick={handleDelete}> Eleminate !</button>
