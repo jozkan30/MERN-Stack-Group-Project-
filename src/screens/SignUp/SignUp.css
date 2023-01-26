@@ -8,6 +8,7 @@
 .signUpForm{
 display:flex;
 flex-direction: column;
+flex-wrap: wrap; 
 }
 
 .signupSignInButton{
@@ -33,11 +34,13 @@ margin-right: 5px;
     transition-duration: .4s;
 
 }
-
-.signupInput{
-    width: 300px;
-    border-radius: 5px;
-    padding: 2px;
-    margin: 5px;
+@media only screen and (max-width: 600px) { 
+    .signUpForm {
+        flex-wrap: wrap;
+    }
+    .signUpForm input {
+        width: 100%;
+        max-width: 100%;
+    }
 }
 

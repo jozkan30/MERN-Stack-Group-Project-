@@ -14,6 +14,7 @@
   padding: 10px;
   width: 56%;
   background-color: rgb(203, 200, 200);
+
   
 }
 
@@ -133,4 +134,27 @@ label[for="custom-file-input"]:hover {
 .create-form input[type="file"] {
   display: none;
 }
+
+@media (max-width: 600px) {
+    .create-form {
+      width: 100%;
+    }
+    
+    .create-form input {
+      width: 80%;
+    }
+    
+    .create-form button {
+      width: 50%;
+    }
+    
+    .custom-file-input {
+      width: 100%;
+    }
+    
+    label[for="custom-file-input"] {
+      width: 100%;
+    }
+  }
+  
 

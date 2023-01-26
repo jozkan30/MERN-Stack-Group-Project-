@@ -1,37 +1,28 @@
-.signIn{
+.form-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    margin: 0 auto;
+    width: 50%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 .signinSignUpButton{
-    align-self: flex-end;
-    color: black;
-    border-radius: 5px;
-    border: none;
-    font-size: 1.2em;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    transform: scale(1);
-    margin-right: 5px;
-}
-
-.signinButton{
-    margin: 5px;
+align-self: flex-end;
 }
 
 .signinButton:hover{
     background-color: lightgreen;
     transition-duration: .4s;
-}
-
-
-.signinInput{
-    width: 300px;
-    border-radius: 5px;
-    padding: 2px;
-    margin: 5px;
 }
 
 .signInForm input {
@@ -44,12 +35,16 @@
     color: #404258;
 }
 
-.signInForm input[type="submit"]:hover {
-    background-color: #3e8e41;
-    cursor: pointer;
+input {
+    padding: 10px;
+    margin: 5px;
+    width: 75%;
+    max-width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
 }
 
-.signInForm input[type="submit"] {
+button[type='submit'] {
     border: none;
     border-radius: 10px;
     padding: 10px 20px;
@@ -61,4 +56,23 @@
 }
 
 
+button[type='submit'].danger {
+    background-color: #f44336;
+}
 
+@media only screen and (max-width: 600px) {
+    .form-container {
+        width: 80%;
+    }
+
+    label {
+        font-size: 1.2rem;
+        color: #404258;
+    }
+
+    button[type='submit']:hover {
+        background-color: #3e8e41;
+        cursor: pointer;
+        align-items: center;
+    }
+}

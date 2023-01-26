@@ -1,93 +1,65 @@
-.navBar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem;
-    border-radius: 10px;
-    background-color:#404258;
-    position: fixed;
-    top: 0;
-    z-index: 1;
+@media only screen and (max-width: 600px) {
+  .navBar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   }
-
+  
   .navBarInfo {
-    text-decoration: none;
-    color: black;
-    background-color:white;
-    padding: 0.5rem;
-    border-radius: 10px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-      rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  font-size: 1.2rem;
+  color: #404258;
+  padding: 10px;
+  margin: 5px;
   }
-
-  /* .authButtons{
-    display: flex;
-    flex-direction: column;
-  } */
-
-  #signinButton{
-    margin: 10px;
+  
+  .authButtons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
   }
-
-  .navBarInfo:hover {
-    background-color: #f5f5f5;
-    color: #404258;
-    cursor: pointer;
-    }
-    
-    .navBarInfo:active {
-    background-color: #e5e5e5;
-    }
-    
-    .navBarLogo {
-    font-size: 2rem;
-    font-weight: bold;
-    color: white;
-    }
-    
-    .authButtons {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    }
-    
-    #signupButton {
-    margin: 10px;
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 10px;
-    text-decoration: none;
-    }
-    
-    #signupButton:hover {
-    background-color: #3e8e41;
-    cursor: pointer;
-    }
-    
-    #signupButton:active {
-    background-color: #3e8e41;
-    }
-    
-    #logoutButton {
-    margin: 10px;
-    background-color: #f44336;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 10px;
-    text-decoration: none;
-    }
-    
-    #logoutButton:hover {
-    background-color: #da190b;
-    cursor: pointer;
-    }
-    
-    #logoutButton:active {
-    background-color: #da190b;
-    }
-
-    body {
-      padding-top: 80px;
-    }
+  
+  #signinButton, #signupButton {
+  font-size: 1.2rem;
+  color: #404258;
+  padding: 10px;
+  margin: 5px;
+  }
+  }
+  
+  .navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+  
+  .navBarInfo {
+  padding: 10px;
+  margin: 5px;
+  text-decoration: none;
+  color: white;
+  }
+  
+  .authButtons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+  
+  #signinButton, #signupButton {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+  }
+  
+  #signinButton:hover, #signupButton:hover {
+  background-color: lightgreen;
+  transition-duration: .4s;
+  cursor: pointer;
+  }

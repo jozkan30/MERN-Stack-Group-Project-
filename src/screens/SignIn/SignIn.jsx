@@ -57,7 +57,7 @@ const SignIn = (props) => {
     <div className='form-container'>
       <h3>Sign In</h3>
       <form onSubmit={onSignIn}>
-        <label>Email</label>
+        <label></label>
         <input
           required
           type='text'
@@ -66,7 +66,7 @@ const SignIn = (props) => {
           placeholder='Enter Email'
           onChange={handleChange}
         />
-        <label>Password</label>
+        <label></label>
         <input
           required
           name='password'

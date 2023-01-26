@@ -36,18 +36,10 @@ Welcome to our digital curbside. We want this to be an online hub where you can 
 Have working generic controller actions for full-CRUD using Express, Mongoose, and MongoDB.
 
 ### Wireframes/planning
-
-We spent an entire afternoon wireframing, making a calendar and team requirements, and divvying up responsibilities, screens, and components. Everything was carefully documented on our notion and google calendar.
-![Wireframe](https://imgur.com/a/xr6IYmy)
-![Google Calendar](https://i.imgur.com/doXEwd1.png)
-![TaskBoard](https://imgur.com/nZAX1Pq)
-=======
 We spent an entire afternoon wireframing, making a calendar and team requirements, and divvying up responsibilities, screens, and components. Everything was carefully documented on our notion and google calendar and it helped us stay well organized throughout the duration of the project.
 ![Wireframe](https://i.imgur.com/DCAQw8T.jpgy)
-![Google Calendar](https://imgur.com/a/8tXALaV)
+![Google Calendar](https://i.imgur.com/doXEwd1.png)
 ![TaskBoard](https://i.imgur.com/nZAX1Pq.png)
-
-
 --- 
 ### Skills used
 **Front End:**
@@ -76,12 +68,11 @@ Our website has full CRUD functionality! You can:
 **READ:**
 ![View item](https://i.imgur.com/C8HEZef.png)
 
-[comment]: <> (This is a comment, it will not be included)
-=======
 **UPDATE:**
 ![Edit Item](https://i.imgur.com/cxEfGrx.png)
 
 **DELETE:**
 ![Delete Item](https://i.imgur.com/6J3K9Pc.png)
+<br>
 (but please don't, Justin gets sad when he has to reseed the database :sob:)
 
