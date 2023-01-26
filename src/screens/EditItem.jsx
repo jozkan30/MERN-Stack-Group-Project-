@@ -50,11 +50,13 @@ export default function EditItem() {
     
   };
 
+  
   return (
     <div>
-      <form className="editForm" onSubmit={handleSubmit}>
+      <form style={styles.form} onSubmit={handleSubmit}>
         <div>Edit the title:</div>
         <input
+          style={styles.inputs}
           name="titleEdit"
           type="text"
           // onChange={handleChange}
@@ -64,6 +66,7 @@ export default function EditItem() {
         />
         <div>Edit the price:</div>
         <input
+          style={styles.inputs}
           name="priceEdit"
           type="text"
           // onChange={handleChange}
@@ -72,6 +75,7 @@ export default function EditItem() {
         />
         <div>Edit the description:</div>
         <input
+          style={styles.inputs}
           name="descriptionEdit"
           type="text"
           // onChange={handleChange}
@@ -80,6 +84,7 @@ export default function EditItem() {
         />
         <div>Edit the category:</div>
         <input
+          style={styles.inputs}
           name="categoryEdit"
           type="text"
           // onChange={handleChange}
@@ -88,6 +93,7 @@ export default function EditItem() {
         />
         <div>Edit image link:</div>
         <input
+          style={styles.inputs}
           name="imageEdit"
           type="url"
           // onChange={handleChange}
@@ -99,3 +105,22 @@ export default function EditItem() {
     </div>
   );
 }
+
+//This is the CSS: 
+
+const styles = {
+  form: {
+    margin: '20px',
+    display: 'flex',
+    flexDirection: 'column', 
+    justifyContent: 'center',
+    alignItems: 'center', 
+  },
+
+  inputs: {
+    padding: '10px',
+    marginBottom: '20px',
+    marginTop: '5px'
+  }
+}
+

@@ -25,8 +25,8 @@ export default function Home() {
       <p>Do whatever you think is good.</p>
       <img src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Fc6d72fca-533a-11e7-bb68-01a62c2a3512.jpg?crop=1500%2C844%2C0%2C78&resize=1200" alt="Xavier"></img>
       <p>Write your own story.</p>
-      <img src="https://as2.ftcdn.net/v2/jpg/01/89/86/13/1000_F_189861340_znPKQiIUAN2RtSfL7atF1oLnas8Jvl0k.jpg" alt="Katherine"></img>
-      <p>I don't have anything right now. Sorry.</p>
+      <img src="https://i.imgur.com/PZF9MKV.png" alt="Katherine"></img>
+      <p>Just here to have some fun and code. Hopefully those end up being the same thing.</p>
 
     </div>
     </div>
