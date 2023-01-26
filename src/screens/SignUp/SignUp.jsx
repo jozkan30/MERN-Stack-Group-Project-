@@ -1,4 +1,3 @@
-
 import { useState } from 'react'
 import './SignUp.css'
 import { signUp } from '../../services/users'
@@ -104,4 +103,3 @@ const SignUp = (props) => {
 }
 
 export default SignUp
-

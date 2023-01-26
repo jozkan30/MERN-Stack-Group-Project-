@@ -5,11 +5,6 @@
     align-items: center;
 }
 
-.signInForm{
-    display:flex;
-    flex-direction: column;
-}
-
 .signinSignUpButton{
     align-self: flex-end;
     color: black;
@@ -29,6 +24,14 @@
 .signinButton:hover{
     background-color: lightgreen;
     transition-duration: .4s;
+}
+
+
+.signinInput{
+    width: 300px;
+    border-radius: 5px;
+    padding: 2px;
+    margin: 5px;
 }
 
 .signInForm input {
@@ -56,5 +59,6 @@
     margin: 10px auto;
     display: block;
 }
+
 
 
