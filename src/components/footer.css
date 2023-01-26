@@ -2,6 +2,8 @@
 
   background-color: black;
   color: white;
+  position: absolute;
+  width: 100%;
 }
 .contact-header {
   display: flex;

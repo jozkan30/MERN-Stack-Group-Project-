@@ -17,8 +17,7 @@ export default function Item({ item }) {
         />
         </Link>
 
-        <p className="itemTitle" > {item.title} </p>
-
+        
         <p> {item.title} </p>
 
     </div>
