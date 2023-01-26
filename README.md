@@ -15,7 +15,7 @@ Welcome to our digital curbside. We want this to be an online hub where you can 
 - A thoroughly developed, beautiful README.md file.
 - A team expectations document denoting each coders strengths and weaknesses, timeline, goals and values.
 --- 
-    **Collaboration:**
+**Collaboration:**
 - Each team member contributing equally
 - Each team member having a solid understanding of the entire project, even the features implemented by other team members.
 - Pair program with teammates
@@ -36,10 +36,10 @@ Welcome to our digital curbside. We want this to be an online hub where you can 
 Have working generic controller actions for full-CRUD using Express, Mongoose, and MongoDB.
 
 ### Wireframes/planning
-We spent an entire afternoon wireframing, making a calendar and team requirements, and divvying up responsibilities, screens, and components. Everything was carefully documented on our notion and google calendar.
-![Wireframe](https://imgur.com/a/xr6IYmy)
+We spent an entire afternoon wireframing, making a calendar and team requirements, and divvying up responsibilities, screens, and components. Everything was carefully documented on our notion and google calendar and it helped us stay well organized throughout the duration of the project.
+![Wireframe](https://i.imgur.com/DCAQw8T.jpgy)
 ![Google Calendar](https://imgur.com/a/8tXALaV)
-![TaskBoard](https://imgur.com/nZAX1Pq)
+![TaskBoard](https://i.imgur.com/nZAX1Pq.png)
 
 --- 
 ### Skills used
@@ -58,6 +58,20 @@ We spent an entire afternoon wireframing, making a calendar and team requirement
 - An "add to cart" feature, that would bring you to a cart screen where you can see the items that you've added to your cart.
 - User authentication
 - Being able to save your cart for a certian amount of time even after you log out and log back in
+-Commenting on an item
+-Having a count below each item on the all listings page that says "X people are interested in this item" and having that number update every time someone clicks on the item
+---
+### User Experience:
+Our website has full CRUD functionality! You can:
+**CREATE:**
+![Add new item](https://i.imgur.com/Y1ysbtu.png)
 
+**READ:**
+![View item](https://i.imgur.com/C8HEZef.png)
 
-[comment]: <> (This is a comment, it will not be included)
+**UPDATE:**
+![Edit Item](https://i.imgur.com/cxEfGrx.png)
+
+**DELETE:**
+![Delete Item](https://i.imgur.com/6J3K9Pc.png)
+(but please don't, Justin gets sad when he has to reseed the database :sob:)
