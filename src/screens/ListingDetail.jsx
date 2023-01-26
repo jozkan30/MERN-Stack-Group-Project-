@@ -23,6 +23,7 @@ export default function ItemDetail() {
     navigate("/items", { replace: true });
   }
 
+  console.log(item)
   return (
     <div className="card">
       <div>

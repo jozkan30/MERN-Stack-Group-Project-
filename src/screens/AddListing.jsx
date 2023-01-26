@@ -25,9 +25,9 @@ export default function ItemCreate() {
       price: item.price,
       description: item.description,
       category: item.category,
-      image: item.imageURL,
+      image: item.image
     });
-    navigate(`/items/${createdItem.id}`, { replace: true });
+    navigate(`/items/${createdItem._id}`, { replace: true });
   };
 
   const handleChange = (e) => {
@@ -73,11 +73,11 @@ export default function ItemCreate() {
         <input
             type="text"
             placeholder="Image URL"
-            name="imageUrl"
-            value={item.imageUrl}
+            name="image"
+            value={item.image}
             onChange={handleChange}
         />
-        <img src={item.imageUrl} alt="item" />
+        <img src={item.image} alt="item" />
         <button type="submit">Post Item!!!</button>
       </form>
     </div>
