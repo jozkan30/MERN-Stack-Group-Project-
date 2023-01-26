@@ -38,7 +38,7 @@ Have working generic controller actions for full-CRUD using Express, Mongoose, a
 ### Wireframes/planning
 We spent an entire afternoon wireframing, making a calendar and team requirements, and divvying up responsibilities, screens, and components. Everything was carefully documented on our notion and google calendar.
 ![Wireframe](https://imgur.com/a/xr6IYmy)
-![Google Calendar](https://imgur.com/a/8tXALaV)
+![Google Calendar](https://i.imgur.com/doXEwd1.png)
 ![TaskBoard](https://imgur.com/nZAX1Pq)
 
 --- 
