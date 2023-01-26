@@ -52,7 +52,7 @@ export default function ItemCreate() {
         <input
           type="text"
           placeholder="Item Price"
-          name="name"
+          name="price"
           value={item.price}
           onChange={handleChange}
         />
@@ -66,16 +66,16 @@ export default function ItemCreate() {
         <input
           type="text"
           placeholder="Category"
-          name="description"
+          name="category"
           value={item.category}
           onChange={handleChange}
         />
         <input
-          type="text"
-          placeholder="Image"
-          name="imageURL"
-          value={item.imageUrl}
-          onChange={handleChange}
+            type="text"
+            placeholder="Image URL"
+            name="imageUrl"
+            value={item.imageUrl}
+            onChange={handleChange}
         />
         <img src={item.imageUrl} alt="item" />
         <button type="submit">Post Item!!!</button>
@@ -83,3 +83,4 @@ export default function ItemCreate() {
     </div>
   );
 }
+
