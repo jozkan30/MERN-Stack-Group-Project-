@@ -15,6 +15,7 @@ const SignUp = (props) => {
     errorMsg: '',
   })
 
+
   const handleChange = (event) =>
     setForm({
       ...form,
@@ -25,6 +26,7 @@ const SignUp = (props) => {
     event.preventDefault()
     const { setUser } = props
     try {
+      
       const user = await signUp(form)
       setUser(user)
       navigate('/')
