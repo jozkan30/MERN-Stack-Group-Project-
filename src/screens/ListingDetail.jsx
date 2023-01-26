@@ -1,11 +1,15 @@
 import { useState, useEffect } from "react";
 import { deleteItem, getItem } from "../services/items.js";
 import { Link, useParams, useNavigate } from "react-router-dom";
+import React from "react";
+import jwtDecode from "jwt-decode";
+
 import './ListingDetail.css'
 
 export default function ItemDetail() {
   const [item, setItem] = useState({});
 
+  
   let { id } = useParams();
   let navigate = useNavigate();
 
@@ -18,10 +22,14 @@ export default function ItemDetail() {
     setItem(oneItem);
   }
 
+
+
   async function handleDelete() {
     await deleteItem(id);
     navigate("/items", { replace: true });
   }
+
+  const userKey = localStorage.getItem('token')
 
   return (
     <div className="card">
@@ -31,12 +39,18 @@ export default function ItemDetail() {
         <p className="detailDescription">{item.description}</p>
         <p> {item.comments} </p>
       </div>
-      <Link to={`/items/${item._id}/edit`}>
+      {userKey === null ?
 
-        <button className="editButton">Edit item</button>
-      </Link>
+      
+      <Link to= "/items"><button>Home</button></Link>
+      :  
+      <div>
+      <Link to={`/items/${item._id}/edit`}>
+        <button className="editButton">Edit item</button></Link>
+
       <button className="eliminate" onClick={handleDelete}> Eleminate !</button>
-    </div>
+      </div>}
+      </div>
+  )
+      }
     
-  );
-};
