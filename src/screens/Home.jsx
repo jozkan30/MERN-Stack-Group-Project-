@@ -17,7 +17,7 @@ export default function Home() {
       </div>
       <div className="devTeam">
       <h2>Meet your dev team</h2>
-      <img src="https://pbs.twimg.com/media/B8wTjrKCEAE2O4P.jpg" alt="John"></img>
+      <img src="https://i.imgur.com/xmm5v7H.png" alt="John"></img>
       <p>Synergy-seeker. Game-changer. Value-architect.</p>
       <img src="https://i.imgur.com/Lpmwvql.png" alt="Zack"></img>
       <p>Swapped out Cow tipping for Coding</p>
