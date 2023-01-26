@@ -8,6 +8,7 @@
 .signInForm{
 display:flex;
 flex-direction: column;
+flex: wrap;
 }
 
 .signinSignUpButton{
@@ -22,16 +23,22 @@ align-self: flex-end;
 .signInForm input {
     padding: 10px;
     margin: 5px;
+    width: 100%;
+    max-width: 100%;
 }
+@media only screen and (max-width: 600px) {
+    .signInForm label {
+        font-size: 1.2rem;
+        color: #404258;
+    }
 
-.signInForm label {
-    font-size: 1.2rem;
-    color: #404258;
-}
 
-.signInForm input[type="submit"]:hover {
-    background-color: #3e8e41;
-    cursor: pointer;
+
+    .signInForm input[type="submit"]:hover {
+        background-color: #3e8e41;
+        cursor: pointer;
+        align-items: center;
+    }
 }
 
 .signInForm input[type="submit"] {

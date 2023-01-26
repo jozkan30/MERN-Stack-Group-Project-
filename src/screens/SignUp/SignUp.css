@@ -8,6 +8,7 @@
 .signUpForm{
 display:flex;
 flex-direction: column;
+flex-wrap: wrap; 
 }
 
 .signupSignInButton{
@@ -17,4 +18,13 @@ align-self: flex-end;
 .signupButton:hover{
     background-color: lightgreen;
     transition-duration: .4s;
+}
+@media only screen and (max-width: 600px) { 
+    .signUpForm {
+        flex-wrap: wrap;
+    }
+    .signUpForm input {
+        width: 100%;
+        max-width: 100%;
+    }
 }
