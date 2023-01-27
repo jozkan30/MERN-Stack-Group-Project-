@@ -32,13 +32,14 @@ Here is the link to our website: https://63d3f7e48864f50e9ff4c5b9--quiet-cascaro
 - Consume data from your API, and render that data in your components.
 - Utilize React Router for client-side routing.
 - Be styled with CSS.
-- Use flexbox (display: flex) or CSS Grid.
+- Use flexbox or CSS Grid.
 - Implement responsive design on 2 screen sizes (including desktop) using a media query (mobile).
 
 **Back End:**
 Have working generic controller actions for full-CRUD using Express, Mongoose, and MongoDB.
-
+---
 ### Wireframes/planning
+
 We spent an entire afternoon wireframing, making a calendar and team requirements, and divvying up responsibilities, screens, and components. Everything was carefully documented on our notion and google calendar and it helped us stay well organized throughout the duration of the project.
 ![Wireframe](https://i.imgur.com/DCAQw8T.jpgy)
 ![Google Calendar](https://i.imgur.com/doXEwd1.png)
@@ -58,10 +59,10 @@ We spent an entire afternoon wireframing, making a calendar and team requirement
 --- 
 ### Goals for Future
 - An "add to cart" feature, that would bring you to a cart screen where you can see the items that you've added to your cart.
-- User authentication
 - Being able to save your cart for a certian amount of time even after you log out and log back in
--Commenting on an item
--Having a count below each item on the all listings page that says "X people are interested in this item" and having that number update every time someone clicks on the item
+- Commenting on an item
+- Having a count below each item on the all listings page that says "X people are interested in this item" and having that number update every time someone clicks on the item
+-More responsive design - we did do some, but it still doesn't look great on every screen
 ---
 ### User Experience:
 Our website has full CRUD functionality! You can:
