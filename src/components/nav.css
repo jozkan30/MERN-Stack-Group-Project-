@@ -1,38 +1,46 @@
 @media only screen and (max-width: 600px) {
   .navBar {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  padding: 45px;
- 
-  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px;
   }
-  
+
   .navBarInfo {
-  font-size: 1.2rem;
-  color: #404258;
-  padding: 10px;
-  margin: 5px;
+    font-size: 1.2rem;
+    color: #404258;
+    padding: 10px;
+    margin: 5px;
+    text-transform: uppercase;
+    
+   
+    font-weight: bolder;
+    font-style: oblique;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px; /* added */
+    text-shadow: 2px 2px #333; /* added */
   }
-  
+
   .authButtons {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
   }
-  
+
   #signinButton, #signupButton {
-  font-size: 1.2rem;
-  color: #404258;
-  padding: 10px;
-  margin: 5px;
+    font-size: 1.2rem;
+    color: #404258;
+    padding: 10px;
+    margin: 5px;
+    letter-spacing: 1px; /* added */
+    text-shadow: 2px 2px #333; /* added */
   }
-  }
-  
-  .navBar {
+}
+
+.navBar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -43,23 +51,33 @@
   width: 100%;
   padding:  0px;
   height: 8vh;
-  
-  }
-  
-  .navBarInfo {
+  z-index: 10;
+}
+
+.navBarInfo {
   padding: 10px;
   margin: 5px;
   text-decoration: none;
   color: white;
-  }
+  text-transform: uppercase;
   
-  .authButtons {
+  font-weight: bolder;
+  font-style: oblique;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: .15rem; /* added */
+  text-shadow: 2px 2px #333;
+  font-size: 1.25rem;
+  margin-left: 10rem;
+
+}
+
+.authButtons {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  }
-  
-  #signinButton, #signupButton {
+}
+
+#signinButton, #signupButton {
   border: none;
   border-radius: 10px;
   padding: 10px 20px;
@@ -67,10 +85,21 @@
   color: white;
   text-decoration: none;
   margin: 10px;
-  }
-  
-  #signinButton:hover, #signupButton:hover {
-  background-color: lightgreen;
-  transition-duration: .4s;
+  font-size: 1.4rem; /* added */
+  letter-spacing: 1px; /* added */
+  text-shadow: 2px 2px #333; /* added */
+}
+
+#signinButton:hover, #signupButton:hover {
+  background-color: #3e8e41; /* changed */
+  transition-duration: .4s; /* added */
+  cursor: pointer; /* added */
+  transform: scale(1.1); /* added */
+}
+
+.navBarInfo:hover {
+  background-color: rgb(155, 152, 149);
+  transition-duration: .3s;
   cursor: pointer;
-  }
+  transform: scale(1.15);
+}
