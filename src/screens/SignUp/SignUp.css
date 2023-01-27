@@ -13,6 +13,20 @@ flex-wrap: wrap;
 
 .signupSignInButton{
 align-self: flex-end;
+color: black;
+border-radius: 5px;
+border: none;
+font-size: 1.2em;
+cursor: pointer;
+transition-duration: .4s;
+transform: scale(1);
+margin-right: 5px;
+}
+
+.signupButton{
+    margin: 5px;
+    justify-self: center;
+    align-self: center;
 }
 
 .signupButton:hover{

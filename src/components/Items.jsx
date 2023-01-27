@@ -16,9 +16,7 @@ export default function Item({ item }) {
         className="listed-item-img"
         />
         </Link>
-
-        
-        <p> {item.title} </p>
+        <p className="itemTitle" > {item.title} </p>
 
     </div>
   );
