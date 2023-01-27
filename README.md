@@ -2,6 +2,9 @@
 
 Welcome to our digital curbside. We want this to be an online hub where you can find the free stuff going out on the curb near you digitally instead of wasting your time driving around. Our MERN stack project features full CRUD functionality, and you can even comment on other users postings.
 
+
+Here is the link to our website: https://63d3f7e48864f50e9ff4c5b9--quiet-cascaron-42b4ff.netlify.app/
+
 ### Team Members:
 - John Hurley
 - Zack Lay
