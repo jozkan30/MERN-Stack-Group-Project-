@@ -65,3 +65,8 @@
   transition-duration: .4s;
   cursor: pointer;
   }
+
+  #logOutButton:hover{
+    color:red;
+    transition-duration: .4s;
+  }
