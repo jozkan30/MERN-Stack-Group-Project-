@@ -29,8 +29,9 @@ export default function ItemDetail() {
     navigate("/items", { replace: true });
   }
 
-  const userKey = localStorage.getItem('token')
 
+  console.log(item)
+  const userKey = localStorage.getItem('token')
   return (
     <div className="card">
       <div>
