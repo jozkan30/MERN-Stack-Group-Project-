@@ -4,6 +4,8 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  padding: 45px;
+ 
   
   }
   
@@ -35,6 +37,13 @@
   justify-content: space-between;
   align-items: center;
   background-color: #404258;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding:  0px;
+  height: 8vh;
+  
   }
   
   .navBarInfo {
