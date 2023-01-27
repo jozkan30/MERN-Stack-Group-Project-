@@ -26,7 +26,7 @@ export default function Nav() {
           All Listings 
         </NavLink>
         <NavLink className={"navBarInfo"} to="/add-listing">
-          Add A New Item
+          New Item
         </NavLink>
         
         {userKey === null ? 
