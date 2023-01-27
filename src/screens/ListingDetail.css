@@ -16,11 +16,27 @@
     margin: 5px;
 }
 
+.editButton{
+    margin: 5px;
+}
+
 .detailDescription{
     font-family:monospace;
+
+}
+
+.eliminate{
+    margin: 5px;
+}
+
+.eliminate:hover{
+    background-color:red;
+    transition-duration: .4s;
+
     text-align: center;
 }
 
 .editItem{
     margin: 8px;
+
 }
