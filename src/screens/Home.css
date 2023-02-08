@@ -74,6 +74,7 @@ button:hover {
 .devTeam img:hover {
     transform: scale(2);
     box-shadow: 2px 2px 3px #ccc;
+    cursor: pointer;
 
 }
 

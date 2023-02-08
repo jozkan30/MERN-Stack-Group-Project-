@@ -17,15 +17,16 @@ export default function Home() {
       </div>
       <div className="devTeam">
       <h2>Meet your dev team</h2>
-      <img src="https://i.imgur.com/xmm5v7H.png" alt="John"></img>
+      <img src="https://i.imgur.com/xmm5v7H.png" alt="John" onClick={() => window.open('https://github.com/alpakas96')}></img>
+
       <p>Synergy-seeker. Game-changer. Value-architect.</p>
-      <img src="https://i.imgur.com/Lpmwvql.png" alt="Zack"></img>
+      <img src="https://i.imgur.com/Lpmwvql.png" alt="Zack" onClick={() => window.open('https://github.com/layz1008')}></img>
       <p>Swapped out Cow tipping for Coding</p>
-      <img src="http://www.gayot.com/wp-content/uploads/2015/06/roger-verg%C3%A9.jpg" alt="Justin"></img>
+      <img src="http://www.gayot.com/wp-content/uploads/2015/06/roger-verg%C3%A9.jpg" alt="Justin" onClick={() => window.open('https://github.com/jozkan30')}></img>
       <p>Do whatever you think is good.</p>
-      <img src="https://i.imgur.com/MMle86I.png" alt="Xavier"></img>
+      <img src="https://i.imgur.com/MMle86I.png" alt="Xavier" onClick={() => window.open('https://github.com/ValtierraXavier')}></img>
       <p>Write your own story.</p>
-      <img src="https://i.imgur.com/PZF9MKV.png" alt="Katherine"></img>
+      <img src="https://i.imgur.com/PZF9MKV.png" alt="Katherine" onClick={() => window.open('https://github.com/ksooooza')}></img>
       <p>Just here to have some fun and code. Hopefully those end up being the same thing.</p>
 
     </div>
